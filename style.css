@@ -1,13 +1,31 @@
+/* FONTS */
+
+/* font-family: 'Bruno Ace SC', cursive;
+font-family: 'Playfair', serif;
+font-family: 'Playfair Display', serif */
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#container {
-    background: linear-gradient( -45deg, #403A3E, #BE5869, #403A3E, #BE5869);
+.pag-1 {
+    background: linear-gradient( -45deg, #403A3E, #b15968, #403A3E, #b15968);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 15s ease infinite;
     height: 100vh;
+    color: aliceblue;
+}
+
+.pag-1 h1 {
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 15%;
+    font-family: 'Bruno Ace SC', cursive;
+}
+.pag-1 h1 span {
+    padding-left: 60px;
 }
 
 @keyframes gradient {
@@ -22,71 +40,24 @@
     }
 }
 
-header h1 {
-    color: #fff;
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    font-family: 'Playfair', serif;
+    list-style-type: none;
+    float: left;
+    display: flex;
+    padding-left: 20px;
     padding-top: 10px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 17px;
     
 }
 
-.conteudo {
-    padding-top: 40px;
-    padding-bottom: 40px;
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
-.conteudo ul li {
-    color: #fff;
-    padding-left: 30px;
-    padding-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
-
-}
-
-.conteudo2 {
-    padding-top: 40px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    color: #fff;
-}
-
-.conteudo2 h2 {
-    padding-bottom: 20px;
-}
-
-.conteudo2 p {
-    font-size: 18px;
-}
-
-.conteudo3 {
-    padding-top: 40px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    color: #fff;
-}
-
-.conteudo3 h2 {
-    padding-bottom: 20px;
-}
-
-.conteudo3 ul li {
-    font-size: 18px;
-}
-
-.conteudo4 {
-    padding-top: 40px;
-    padding-bottom: 60px;
-    padding-left: 30px;
-    color: #fff;
-}
-
-.conteudo4 p {
-    font-size: 18px;
-}
-
-.conteudo4 h2 {
-    padding-bottom: 20px;
-}
