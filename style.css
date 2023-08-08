@@ -68,11 +68,10 @@ nav ul li a {
     color: aliceblue;
 }
 
-hr {
-    border: 0;
-    height: 0;
-    box-shadow: 0 1px 10px 6px white;
-    opacity: 0.8;
+nav ul li a:hover {
+    text-decoration: none;
+    color: #02ffff;
+    transition: 1.1s;
 }
 
 .pag-2 {
@@ -80,8 +79,25 @@ hr {
     background-color: #1f1c1e;
 }
 
-/*Arthur Criou*/
 footer {
-    padding: 20px;
+    background-color: #272424;
+    height: 60vh;
 }
+
+#grid-footer {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    color: aliceblue;
+}
+
+.box-1 {
+    text-align: center;
+}
+
+.box-2 {
+    text-align: center;
+}
+
+
 
