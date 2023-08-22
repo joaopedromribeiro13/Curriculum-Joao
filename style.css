@@ -47,12 +47,19 @@ font-family: 'Playfair Display', serif */
     }
 }
 
-nav {
+header {
+    width: 100%;
+    height: 20px;
+    position: relative;
+
+}
+
+#navbar {
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
+#navbar ul li {
     font-family: 'Playfair', serif;
     list-style-type: none;
     float: left;
@@ -63,12 +70,12 @@ nav ul li {
     
 }
 
-nav ul li a {
+#navbar ul li a {
     text-decoration: none;
     color: aliceblue;
 }
 
-nav ul li a:hover {
+#navbar ul li a:hover {
     text-decoration: none;
     color: #02ffff;
     transition: 1.1s;
@@ -97,6 +104,10 @@ footer {
 
 .box-2 {
     text-align: center;
+}
+
+@media only screen and (max-widht: 768px) {
+
 }
 
 
