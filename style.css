@@ -47,15 +47,117 @@ font-family: 'Playfair Display', serif */
     }
 }
 
-header {
-    width: 100%;
-    height: 20px;
-    position: relative;
 
+
+
+
+
+
+.navbar {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    font-size: 24px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+}
+
+.navbar-list li:last-child {
+    margin-right: 0;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        background-color: #46628adb;
+        position: absolute;
+        top: 42px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-list.active {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .navbar {
+        color: #fff;
+        display: flex;
+        background-color: #8196b3db;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header {
+    width: 100%;
+    height: 80px;
+
+    background: #403A3E;
 }
 
 #navbar {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -70,6 +172,15 @@ header {
     
 }
 
+header a i {
+    padding: 10px;
+    position: static;
+}
+
+header a i:hover {
+    cursor: pointer;
+}
+
 #navbar ul li a {
     text-decoration: none;
     color: aliceblue;
@@ -79,7 +190,7 @@ header {
     text-decoration: none;
     color: #02ffff;
     transition: 1.1s;
-}
+} */
 
 .pag-2 {
     height: 100vh;
