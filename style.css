@@ -10,12 +10,17 @@ font-family: 'Playfair Display', serif */
     padding: 0;
 }
 
+:root{
+    --cor-letras: #fff;
+    --cor-pag1-h1-span: #158495;
+}
+
 .pag-1 {
     background: linear-gradient( -45deg, #403A3E, #46628adb, #403A3E, #b15968);
     background-size: 400% 400%;
     animation: gradient 16s ease infinite;
     height: 100vh;
-    color: aliceblue;
+    color: var(--cor-letras);
 }
 
 .pag-1 h1 {
@@ -26,12 +31,28 @@ font-family: 'Playfair Display', serif */
 }
 
 .pag-1 h1 span {
-    color: #158495;
+    color: var(--cor-pag1-h1-span);
 }
 
 .pag-1 h2 {
     padding-left: 100px;
 }
+
+
+
+.pag-2 h1 {
+    padding-top: 30px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: var(--cor-letras);
+}
+
+.grid-XP {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 
 
 
@@ -131,6 +152,14 @@ font-family: 'Playfair Display', serif */
     .navbar-list li:last-child {
         margin-right: 0;
     }
+
+    .pag-1 h1 {
+        padding-left: 30px;
+    }
+
+    .pag-1 h2 {
+        padding-left: 30px;
+    }
 }
 
 
@@ -223,5 +252,4 @@ footer {
 @media only screen and (max-widht: 768px) {
 
 }
-
 
