@@ -218,9 +218,8 @@ font-family: 'Playfair Display', serif */
     .pag-1 h2 {
         padding-left: 30px;
     }
+
 }
-
-
 
 
 footer {
@@ -230,10 +229,13 @@ footer {
 
 #grid-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
+    grid-template-columns: repeat(auto-fit, 370px);
+    column-gap: 40px;
+    justify-content: space-between;
     color: aliceblue;
     padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .box-1, .box-2 {
@@ -252,27 +254,33 @@ footer {
     padding: 34px 0 34px 0;
 }
 
-.box-1 p {
+.box-1 h3 {
     color: var(--cor-letra-footer);
     font-size: 20px;
 }
 
-.box-1 p span {
+.box-1 h3 span {
     padding-right: 8px;
-    font-size: 23px;
+    font-size: 22px;
     color: var(--cor-letras);
 }
 
 .box-2 i {
     color: var(--cor-letra-footer);
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
     font-size: 30px;
-    display: block;
-    justify-self: center;
+    float: left;
+    display: flex;
 }
 
 .box-2 i:hover {
     cursor: pointer;
+}
+
+.box-2 .icons-footer {
+    display: flex;
+    justify-content: center;
 }
 
 footer h2 {
@@ -284,7 +292,6 @@ footer h2 {
 
 footer h2 span{
     color: var(--cor-pag1-h1-span);
-
 }
 
 
