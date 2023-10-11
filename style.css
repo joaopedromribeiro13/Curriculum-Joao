@@ -16,6 +16,8 @@ font-family: 'Playfair Display', serif */
     --cor-pag1-h1-span: #158495;
     --cor-icons: #fff;
     --cor-letra-footer: #949494;
+    --cor-pag-conteudo: #2e2e2e;
+    --pag-conteudo-2: #d8d8d8;
 }
 
 .pag-1 {
@@ -101,12 +103,109 @@ font-family: 'Playfair Display', serif */
     color: var(--cor-icons);
 }
 
-
 .pag-conteudo {
-    height: 100vh;
-    background-color: #d8d8d8;
+    height: auto;
+    padding: 30px 0 200px 0;
+    background-color: var(--cor-pag-conteudo);
 }
 
+.pag-conteudo i {
+    color: var(--cor-icons);
+    display: flex;
+    float: right;
+    padding-right: 150px;
+    font-size: 40px;
+}
+
+.pag-conteudo p {
+    text-align: center;
+    color: var(--cor-letras);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.pag-conteudo h1 {
+    padding: 35px 0 0 0;
+    text-align: center;
+    font-family: 'Playfair', serif;
+    color: var(--cor-letras);
+}
+
+.pag-conteudo-2 {
+    height: 100vh auto;
+    padding-bottom: 50px;
+    background-color: var(--pag-conteudo-2);
+}
+
+.grid-conteudo-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pag-conteudo-2 h1 {
+    color: #158495;
+    padding: 30px 0 30px 0 ;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
+.pag-conteudo-2 .formacao h2 {
+    padding-bottom: 30px;
+}
+
+.pag-conteudo-2 .experiencia h2 {
+    padding-bottom: 30px;
+}
+
+.pag-conteudo-2 .cursos h2 {
+    padding-bottom: 30px;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: left;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+
+  .active, .accordion:hover {
+    background-color: #ffffff;
+  }
+  
+  .panel {
+    width: 80%;
+    margin: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: #000000;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
 
 
 
@@ -219,7 +318,20 @@ font-family: 'Playfair Display', serif */
         padding-left: 30px;
     }
 
+    .grid-conteudo-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        }
 }
+
+
+@media screen and (max-width: 550px) {
+    .grid-conteudo-2 {
+    display: grid;
+    grid-template-columns: 350px;
+    }
+}
+
 
 
 footer {
