@@ -246,6 +246,10 @@ font-family: 'Playfair Display', serif */
     margin-right: 20px;
 }
 
+.navbar-list li:hover {
+    transform: scale(1.1);
+}
+
 .navbar-list li:last-child {
     margin-right: 0;
 }
@@ -327,8 +331,10 @@ font-family: 'Playfair Display', serif */
 
 @media screen and (max-width: 550px) {
     .grid-conteudo-2 {
-    display: grid;
-    grid-template-columns: 350px;
+        display: grid;
+        grid-template-columns: 350px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
