@@ -36,6 +36,7 @@ font-family: 'Playfair Display', serif */
 }
 
 .pag-1 h1 span {
+    text-shadow: 2px 2px var(--cor-letras);
     color: var(--cor-pag1-h1-span);
 }
 
