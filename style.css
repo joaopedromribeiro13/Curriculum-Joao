@@ -183,10 +183,6 @@ font-family: 'Playfair Display', serif */
     transition: 0.4s;
   }
   
-
-  .active, .accordion:hover {
-    background-color: #ffffff;
-  }
   
   .panel {
     width: 80%;
@@ -257,7 +253,7 @@ font-family: 'Playfair Display', serif */
 
 .navbar-list a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -270,7 +266,7 @@ font-family: 'Playfair Display', serif */
 .bar {
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 3px 0;
 }
 
@@ -278,7 +274,7 @@ font-family: 'Playfair Display', serif */
     .navbar-list {
         display: none;
         flex-direction: column;
-        /* background-color: #46628adb; */
+        
         position: absolute;
         top: 42px;
         left: 0;
@@ -296,9 +292,9 @@ font-family: 'Playfair Display', serif */
     }
 
     .navbar {
-        color: #fff;
+        color: #000000;
         display: flex;
-        /* background-color: #8196b3db; */
+        
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
@@ -309,6 +305,13 @@ font-family: 'Playfair Display', serif */
         padding: 5px 5px 5px 5px;
     }
 
+    .navbar-list li:hover {
+        margin-right: 0;
+        padding: 5px 5px 5px 5px;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
     .navbar-list li:last-child {
         margin-right: 0;
     }
@@ -316,7 +319,7 @@ font-family: 'Playfair Display', serif */
     .pag-1 h1 {
         font-size: 40px;
         padding-left: 30px;
-        padding-top: 110px;
+        padding-top: 120px;
     }
 
     .pag-1 h2 {
@@ -359,6 +362,7 @@ footer {
 
 .box-1, .box-2 {
     text-align: center;
+    word-wrap: break-word;
 }
 
 .box-1 h2 {
