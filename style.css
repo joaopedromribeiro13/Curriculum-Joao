@@ -18,6 +18,8 @@ font-family: 'Playfair Display', serif */
     --cor-letra-footer: #949494;
     --cor-pag-conteudo: #2e2e2e;
     --pag-conteudo-2: #d8d8d8;
+    --pag-sevicos: #434343;
+    --cor-letra-servicos: #fff;
 }
 
 .pag-1 {
@@ -168,6 +170,20 @@ font-family: 'Playfair Display', serif */
 
 .pag-conteudo-2 .cursos h2 {
     padding-bottom: 30px;
+}
+
+
+.pag-servicos {
+    height: 100vh;
+    background-color: var(--pag-sevicos); 
+    color: var(--cor-letra-servicos);  
+}
+
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 370px);
+    column-gap: 40px;
+    justify-content: space-between;
 }
 
 .accordion {
