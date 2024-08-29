@@ -18,8 +18,8 @@ font-family: 'Playfair Display', serif */
     --cor-letra-footer: #949494;
     --cor-pag-conteudo: #2e2e2e;
     --pag-conteudo-2: #d8d8d8;
-    --pag-sevicos: #434343;
-    --cor-letra-servicos: #fff;
+    --pag-sevicos: #e5e5e5;
+    --cor-letra-servicos: #000000;
 }
 
 .pag-1 {
@@ -330,6 +330,14 @@ font-family: 'Playfair Display', serif */
 
     .navbar-list li:last-child {
         margin-right: 0;
+    }
+
+    .pag-1 {
+        background: linear-gradient( -45deg, #403A3E, #46628adb, #403A3E, #b15968);
+        background-size: 250% 250%;
+        animation: gradient 16s ease infinite;
+        height: 100vh;
+        color: var(--cor-letras);
     }
 
     .pag-1 h1 {
